@@ -1,5 +1,6 @@
 var webpack = require("webpack");
 var path = require("path");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
@@ -20,9 +21,21 @@ var config = {
         query: {
             presets: ["react", "es2015", "stage-2"]
         }
-      }
+      },
+      {
+        test: /\.scss$/,
+          use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(png|jpg)$/, 
+        loader: 'url-loader?limit=8192' }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin({
+      filename: 'style.css'
+    })
+  ]
 };
 
 module.exports = config;

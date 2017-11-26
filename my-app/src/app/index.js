@@ -1,13 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
 
-import { Header } from "./components/Header";
+import { StudentIdentify } from "./components/student_identify";
+
+require('../scss/style.scss');
 
 class App extends React.Component {
   render() {
     return (
       <div>
-          <h1>This is a test message from Kevin</h1>
+        <StudentIdentify firstName="Kevin" lastName="Lee" birthday="1990" status="Student" university="UCLA"/>
       </div>
     );
   }

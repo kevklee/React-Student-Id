@@ -1,0 +1,47 @@
+$mainColor: lightblue;
+
+* {
+  background-color: $mainColor;
+}
+
+.wrapper {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+
+.wrapper p {
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+}
+
+.wrapper img {
+  position: relative;
+  left: 50px;
+  border-radius: 50px;
+  border: 5px solid white;
+}
+
+.student-text {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 25px !important;
+  position: relative;
+  width: 475px;
+  background-color: brown;
+  color: white;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  left: 270px;
+  bottom: 170px;
+  width: 200px;
+}
