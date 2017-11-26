@@ -1,7 +1,7 @@
 $mainColor: lightblue;
 
 * {
-  background-color: $mainColor;
+  background-color: white;
 }
 
 .wrapper {
@@ -13,6 +13,7 @@ $mainColor: lightblue;
     left: 50px;
     top: 50px;
     z-index: 1;
+    background-color: $mainColor;
 }
 
 .wrapper p {
@@ -40,8 +41,13 @@ $mainColor: lightblue;
 }
 
 .content {
+  background-color: $mainColor;
   position: relative;
   left: 270px;
   bottom: 170px;
   width: 200px;
+}
+
+.content p {
+  background-color: $mainColor;
 }
